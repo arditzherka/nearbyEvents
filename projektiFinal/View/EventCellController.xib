@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="eventCell" rowHeight="101" id="KGk-i7-Jjw" customClass="EventCellController" customModule="projektiFinal" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="389" height="101"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="389" height="100.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VHN-c7-vgY">
+                        <rect key="frame" x="11" y="5" width="92" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="90" id="1WK-lV-277"/>
+                            <constraint firstAttribute="width" constant="92" id="MgV-au-AJw"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018-04-13 20:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIv-xL-ldH">
+                        <rect key="frame" x="122" y="74" width="124" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="RJd-vy-Dfi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulli i eventit te pare i majtur ne ick Kosove" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jc1-X2-bZv">
+                        <rect key="frame" x="122" y="16" width="245" height="68"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="68" id="uvs-GQ-JbF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mIv-xL-ldH" firstAttribute="leading" secondItem="VHN-c7-vgY" secondAttribute="trailing" constant="19" id="6yF-Ya-ljL"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="jc1-X2-bZv" secondAttribute="trailing" constant="2" id="I77-eX-B5Z"/>
+                    <constraint firstItem="jc1-X2-bZv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="LTz-KX-8K1"/>
+                    <constraint firstItem="VHN-c7-vgY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="NBT-oA-sgw"/>
+                    <constraint firstItem="VHN-c7-vgY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="11" id="UXc-xe-Pe2"/>
+                    <constraint firstAttribute="bottom" secondItem="VHN-c7-vgY" secondAttribute="bottom" constant="5.5" id="Za7-ep-mKs"/>
+                    <constraint firstItem="jc1-X2-bZv" firstAttribute="leading" secondItem="VHN-c7-vgY" secondAttribute="trailing" constant="19" id="iD6-Nf-iQV"/>
+                    <constraint firstItem="mIv-xL-ldH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="63" id="sfq-5f-8VB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="eventTime" destination="mIv-xL-ldH" id="zOr-3m-0Lm"/>
+                <outlet property="eventTitle" destination="jc1-X2-bZv" id="7Lx-yQ-Qwr"/>
+                <outlet property="imgFotoja" destination="VHN-c7-vgY" id="zWM-sM-Gef"/>
+            </connections>
+            <point key="canvasLocation" x="16.5" y="6.5"/>
+        </tableViewCell>
+    </objects>
+</document>
